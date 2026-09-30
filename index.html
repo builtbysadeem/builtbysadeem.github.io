@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sadeem Hasan</title>
+<meta name="description" content="Sadeem Hasan — data and web.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#FBFAF6;--ink:#1E3BB3;--ink-soft:#5B6FC7;--line:#D9DCEB;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;--display:'Archivo',system-ui,sans-serif;
+  box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--mono);font-size:15px;line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.page{max-width:1100px;margin:0 auto;padding:0 clamp(20px,5vw,56px)}
+.nav{position:sticky;top:0;z-index:10;background:var(--paper);padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid var(--line)}
+.nav .page{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font-family:var(--display);font-weight:800;font-size:18px;text-decoration:none;letter-spacing:-0.01em}
+.nav ul{display:flex;gap:clamp(16px,3vw,32px);list-style:none;margin:0;padding:0;font-size:14px}
+.nav ul a{text-decoration:none}
+.nav ul a:hover{text-decoration:underline}
+.hero{min-height:calc(100vh - 64px);min-height:calc(100svh - 64px);position:relative;display:flex;align-items:center}
+.name{font-family:var(--display);font-weight:800;font-size:clamp(64px,17vw,210px);letter-spacing:-0.03em;line-height:.9;margin:0}
+.mark{font-family:var(--mono);font-size:clamp(11px,1.4vw,16px);font-weight:500;letter-spacing:0;vertical-align:top;border:1.5px solid var(--ink);border-radius:50%;padding:2px 7px;margin-left:8px;position:relative;top:.6em}
+.corner{position:absolute;right:0;bottom:40px;font-size:13px}
+.corner-left{position:absolute;left:0;bottom:40px;font-size:13px}
+.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:24px;align-content:center;align-items:start;min-height:calc(100vh - 64px);min-height:calc(100svh - 64px);padding:80px 0;border-top:1px solid var(--line)}
+#contact{min-height:auto;padding:80px 0}
+.row h2{font-family:var(--mono);font-size:15px;font-weight:500;margin:0}
+.row p{margin:0 0 12px;max-width:60ch}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:24px}
+.skills h3{font-size:13px;font-weight:400;color:var(--ink-soft);margin:0 0 8px}
+.skills ul{list-style:none;margin:0;padding:0}
+.work{position:relative;padding:32px 0}
+.list{list-style:none;margin:0;padding:0;opacity:.3;filter:blur(1.5px)}
+.list li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.status{color:var(--ink-soft);font-size:13px}
+.tape{position:absolute;left:-40vw;right:-40vw;top:50%;height:40px;background:var(--ink);color:var(--paper);
+  display:flex;align-items:center;white-space:nowrap;overflow:hidden;font-size:13px;font-weight:500;letter-spacing:.04em;pointer-events:none}
+.tape::before,.tape::after{content:"";position:absolute;left:0;right:0;height:5px;
+  background:repeating-linear-gradient(-45deg,var(--paper) 0 8px,var(--ink) 8px 16px)}
+.tape::before{top:3px}.tape::after{bottom:3px}
+.tape span{padding:0 12px}
+.tape-a{transform:translateY(-50%) rotate(-5deg)}
+.tape-b{transform:translateY(-50%) rotate(4deg)}
+.contact{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:32px}
+.contact dt{color:var(--ink-soft)}
+.contact dd{margin:0}
+footer{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:40px 0 56px;border-top:1px solid var(--line);font-size:13px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:640px){.row{grid-template-columns:1fr;gap:20px;padding:64px 0}.corner{display:none}}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <div class="page">
+    <a class="logo" href="#top">SADEEM</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Work</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page" id="top">
+  <section class="hero">
+    <h1 class="name">SADEEM<span class="mark" aria-hidden="true">SA</span></h1>
+    <span class="corner-left">Data in. Decisions out.</span>
+    <span class="corner">data / web</span>
+  </section>
+
+  <section class="row" id="about">
+    <h2>About</h2>
+    <div>
+      <p>I'm Sadeem, an IT graduate-to-be from Prince Mohammad Bin Fahd University in Khobar.</p>
+      <p>I build Power BI dashboards that turn messy data into clear answers, and websites that are simple to use.</p>
+      <p>I enjoy turning complicated things into something anyone can use. I care about how things look as much as how they work, so good design always finds its way into what I build.</p>
+      <p>Right now I'm experimenting with hand tracking and designing Laffa, a walking app that draws your route. Away from the screen, I'm usually reading, drawing, or thinking about fashion.</p>
+    </div>
+  </section>
+
+  <section class="row" id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><h3>Data</h3><ul><li>Power BI</li><li>SQL and databases</li><li>Data analysis</li><li>Python</li></ul></div>
+      <div><h3>Design and build</h3><ul><li>UI/UX design</li><li>Figma</li><li>HTML, CSS and JavaScript</li><li>Web development</li><li>App development</li><li>Java</li></ul></div>
+      <div><h3>Tools and process</h3><ul><li>Git and GitHub</li><li>Agile and Scrum</li><li>Networking</li></ul></div>
+    </div>
+  </section>
+
+  <section class="row" id="work">
+    <h2>Work</h2>
+    <div class="work">
+      <p class="sr-only">This section is being built. Projects are coming soon.</p>
+      <ul class="list" aria-hidden="true">
+        <li><span>Hand tracking experiments</span><span class="status">Soon</span></li>
+        <li><span>Power BI dashboard</span><span class="status">Soon</span></li>
+        <li><span>Laffa, a walking app</span><span class="status">Soon</span></li>
+        <li><span>Something new</span><span class="status">Soon</span></li>
+      </ul>
+      <div class="tape tape-a" aria-hidden="true"><span>Building it now&nbsp;&nbsp;/</span><span>Building it now&nbsp;&nbsp;/</span><span>Building it now&nbsp;&nbsp;/</span><span>Building it now&nbsp;&nbsp;/</span><span>Building it now&nbsp;&nbsp;/</span><span>Building it now&nbsp;&nbsp;/</span><span>Building it now&nbsp;&nbsp;/</span><span>Building it now&nbsp;&nbsp;/</span></div>
+      <div class="tape tape-b" aria-hidden="true"><span>Work in progress&nbsp;&nbsp;/</span><span>Work in progress&nbsp;&nbsp;/</span><span>Work in progress&nbsp;&nbsp;/</span><span>Work in progress&nbsp;&nbsp;/</span><span>Work in progress&nbsp;&nbsp;/</span><span>Work in progress&nbsp;&nbsp;/</span><span>Work in progress&nbsp;&nbsp;/</span><span>Work in progress&nbsp;&nbsp;/</span></div>
+    </div>
+  </section>
+
+  <section class="row" id="contact">
+    <h2>Contact</h2>
+    <dl class="contact">
+      <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/sadeemhasan">linkedin.com/in/sadeemhasan</a></dd>
+      <dt>GitHub</dt><dd><a href="https://github.com/builtbysadeem">github.com/builtbysadeem</a></dd>
+    </dl>
+  </section>
+
+  <footer>
+    <span>© 2026 Sadeem Hasan</span>
+    <span>Built by Sadeem.</span>
+  </footer>
+</main>
+</body>
+</html>
